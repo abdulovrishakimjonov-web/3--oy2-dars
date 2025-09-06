@@ -8,25 +8,112 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <header>
+  <header class="p-3 sm:p-4 md:p-5   ">
       <div class="container">
-        <div class="flex">
+        <div class="flex items-center justify-between">
           <div>
-            <img src="./img/logo (6).svg" alt="" />
+            <img src="./img/logo (6).svg" alt="" class="h-8 sm:h-10 md:h-auto" />
           </div>
-          <div class="flex aligin">
-            <p><span>Home</span></p>
-            <select name="" id="">
-              <option value="Services">Services</option>
-            </select>
+          <div class="hidden md:flex gap-8 lg:gap-[60px] cursor-pointer items-center">
+            <p><span class="text-lime-700">Home</span></p>
+            <a href="./index.html"><p>Services</p></a>
             <p>Blog</p>
             <p>Contact</p>
-            <button>
-              <img src="./img/image 2 (Traced).svg" alt="" />Take a scoring test
+            <button class="bg-lime-700 rounded-[15px] w-[140px] lg:w-[180px] h-[35px] lg:h-[40px] cursor-pointer text-gray-50 text-sm lg:text-base">Take a scoring test</button>
+          </div>
+          <div class="md:hidden">
+            <button class="text-lime-700 hover:text-lime-800 focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
             </button>
+          </div>
+        </div>
+        <div class="hidden md:hidden mt-4 pb-4 border-t border-gray-200">
+          <div class="flex flex-col space-y-3 cursor-pointer">
+            <p><span class="text-lime-700">Home</span></p>
+            <a href="./index.html"><p>Services</p></a>
+            <p>Blog</p>
+            <p>Contact</p>
+            <button class="bg-lime-700 rounded-[15px] w-full h-[40px] cursor-pointer text-gray-50 mt-3">Take a scoring test</button>
           </div>
         </div>
       </div>
     </header>
+    <!-- header end -->
+
+<section class="py-8 md:py-12 lg:py-16">
+    <div class="container px-4">
+        <div class="flex flex-col lg:flex-row items-center justify-between mb-6 lg:mb-12">
+            <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+                <h1 class="text-[32px] sm:text-[48px] md:text-[60px] lg:text-[70px] mb-4 leading-tight">One platform <br> meeting <span class="text-lime-700">all your <br> relocation</span> needs</h1>
+                <p class="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] mb-7 text-zinc-600">Get a Global Talent Visa and relocate to the UK. <br class="hidden sm:block"> Start your journey now</p>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+                    <button class="w-full sm:w-[200px] md:w-[220px] lg:w-[250px] h-[60px] md:h-[70px] lg:h-[75px] bg-red-300 rounded-[30px] md:rounded-[35px] lg:rounded-[40px] text-[14px] md:text-[15px] lg:text-[16px] text-white cursor-pointer hover:bg-red-500 transition-colors duration-300">Take a scoring test</button>
+                    <p class="text-gray-400 text-[14px] md:text-[15px] lg:text-[16px]">Evaluate your chances and get detailed <br class="hidden sm:block"> feedback from our team</p>
+                </div>
+            </div>
+            <div class="w-full lg:w-[50%]">
+                <img src="./img/Group (1).png" alt="" class="w-full h-auto">
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 cursor-pointer">
+            <img src="./img/Rectangle 1 (1).png" alt="" class="h-12 sm:h-16 md:h-20 lg:h-auto w-auto">
+            <img src="./img/Rectangle 2.png" alt="" class="h-12 sm:h-16 md:h-20 lg:h-auto w-auto">
+            <img src="./img/Rectangle 3 (1).png" alt="" class="h-12 sm:h-16 md:h-20 lg:h-auto w-auto">
+            <img src="./img/Rectangle 4.png" alt="" class="h-12 sm:h-16 md:h-20 lg:h-auto w-auto">
+            <img src="./img/Rectangle 7.png" alt="" class="h-12 sm:h-16 md:h-20 lg:h-auto w-auto">
+            <img src="./img/Rectangle 6.png" alt="" class="h-12 sm:h-16 md:h-20 lg:h-auto w-auto">
+        </div>
+    </div>
+   </section>
+   <!-- showceis end -->
+<section class="py-8 md:py-12 lg:py-16">
+        <div class="container px-4">
+            <div>
+                <div class="mb-7 lg:mb-12 text-center lg:text-left">
+                    <h2 class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] mb-3 leading-tight">Immigration made easy</h2>
+                    <p class="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] text-gray-600">Urelocation simplifies the visa process for you and your international employees. <br class="hidden md:block"> We'll handle the fine details so you can focus on other tasks</p>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center justify-between mb-[30px] lg:mb-[40px] gap-6 lg:gap-0">
+                <div class="w-full lg:w-1/2 text-center lg:text-left">
+                    <h2 class="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] mb-3">Fast Service</h2>
+                    <p class="text-[14px] sm:text-[16px] lg:text-[18px] text-slate-600">We research, build, submit, and get approved visas in a fraction <br class="hidden lg:block"> of the time while working around your timelines.</p>
+                </div>
+                <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+                    <img src="./img/Rectangle 10.png" alt="" class="w-full max-w-[300px] lg:max-w-none lg:w-auto h-auto">
+                </div>
+                </div>
+                <div class="flex flex-col-reverse lg:flex-row items-center justify-between mb-[30px] lg:mb-[40px] gap-6 lg:gap-0">
+                    <div class="w-full lg:w-1/2 flex justify-center lg:justify-start">
+                        <img src="./img/Rectangle 11 (1).png" alt="" class="w-full max-w-[300px] lg:max-w-none lg:w-auto h-auto">
+                    </div>
+                    <div class="w-full lg:w-1/2 text-center lg:text-right">
+                        <h2 class="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] mb-3">Full control and visibility</h2>
+                        <p class="text-[14px] sm:text-[16px] lg:text-[18px] text-slate-600">Our intuitive platform guides you and your employee through <br class="hidden lg:block"> every step of the immigration process, with at-a-glance status <br class="hidden lg:block"> updates along the way.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0">
+                    <div class="w-full lg:w-1/2 text-center lg:text-left">
+                        <h2 class="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] mb-3">Personalized case managers</h2>
+                        <p class="text-[14px] sm:text-[16px] lg:text-[18px] text-slate-600">Feel confident with our team of global mobility experts. They're <br class="hidden lg:block"> on hand to answer all your questions, letting you focus on what <br class="hidden lg:block"> really matters.</p>
+                    </div>
+                    <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+                        <img src="./img/Rectangle 12.png" alt="" class="w-full max-w-[300px] lg:max-w-none lg:w-auto h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+     <section>
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-[60px] mb-4">Who has relocated with the help <br> of Immigram?</h2>
+                <p class="text-[24px] text-slate-600">You can be next! Start your relocation journey now</p>
+            </div>
+        </div>
+     </section>
+
   </body>
 </html>
